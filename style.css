@@ -1,4 +1,44 @@
-html, body {
-  height: 100%;
-  width: 100%;
+*{
+  padding:0;
+  margin:0;
+  text-decoration:none;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+
+label.logo{
+  color:white;
+  font-size:40px;
+  line-height: 80px;
+  font-weight:bold;
+  margin:10px;
+}
+
+body {
+  font-family:'Fira Sans', sans-serif;
+}
+
+
+nav{
+  background:#3b63f5;
+  height:65px;
+  width:100%;
+}
+
+nav ul{
+  float:right;
+  margin-right:50px;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  color:black;
+}
+
+nav ul li a{
+  color:white;
 }
