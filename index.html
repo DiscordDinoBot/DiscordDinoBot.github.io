@@ -5,9 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Dino Bot</title>
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
   <!-- Style Sheets-->
   <link href="css/main/navigationBar.css" rel="stylesheet" type="text/css" />
   <link href="css/main/backgroundStyle.css" rel="stylesheet" type="text/css" />
+  <link href="css/main/dinoBotLogo.css" rel="stylesheet" type="text/css" />
+  <link href="css/main/mainFlexBox.css" rel="stylesheet" type="text/css" />
+  <link href="css/main/buttons.css" rel="stylesheet" type="text/css" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,5 +45,12 @@
       </ul>
     </div>
   </nav>
+  
+  <!-- Logo with Buttons -->
+  <header>
+    <img src="images/main/Dino-Bot-Logo.svg" alt="Dino Bot Logo" class="Dino-Bot-Logo" draggable="false">
+    <button class="discord-button" role="button" onclick="location.href='https://discord.com/oauth2/authorize?client_id=976563173530419210&permissions=2048&scope=applications.commands%20bot'">Invite Bot to Discord Server</button>
+    <button class="github-button" role="button" onclick="location.href='https://github.com/discorddinobot'">View Code on Github</button>
+  </header>
 </body>
 </html>
