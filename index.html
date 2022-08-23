@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="theme-color" content="#16558F">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Dino Bot</title>
 
@@ -12,11 +13,7 @@
   <link rel="manifest" href="images/favicon/site.webmanifest">
 
   <!-- Style Sheets-->
-  <link href="css/main/navigationBar.css" rel="stylesheet" type="text/css" />
-  <link href="css/main/backgroundStyle.css" rel="stylesheet" type="text/css" />
-  <link href="css/main/dinoBotLogo.css" rel="stylesheet" type="text/css" />
-  <link href="css/main/mainFlexBox.css" rel="stylesheet" type="text/css" />
-  <link href="css/main/buttons.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,14 +21,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 
   <!-- Scripts -->
-  <script src="scripts/main/navigationBar.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 
 </head>
 
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="brand-title">Dino Bot </div>
+    <div class="row-Content">
+      <img src="images/navigationLogo.svg" class="brand-logo" draggable="false">
+      <div class="brand-title"> Dino Bot </div>
+    </div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -46,11 +46,5 @@
     </div>
   </nav>
   
-  <!-- Logo with Buttons -->
-  <header>
-    <img src="images/main/Dino-Bot-Logo.svg" alt="Dino Bot Logo" class="Dino-Bot-Logo" draggable="false">
-    <button class="discord-button" role="button" onclick="location.href='https://discord.com/oauth2/authorize?client_id=976563173530419210&permissions=2048&scope=applications.commands%20bot'">Invite Bot to Discord Server</button>
-    <button class="github-button" role="button" onclick="location.href='https://github.com/discorddinobot'">View Code on Github</button>
-  </header>
 </body>
 </html>
