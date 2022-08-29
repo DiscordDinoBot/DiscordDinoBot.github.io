@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #343232;
+    background-color: #16558F;
 }
 
 .headerSection {
@@ -14,7 +14,8 @@ body {
 
 .mainSection{
     background-color: #f6f3ec;
-    height: 1050px;
+    height: auto;
+    padding-bottom: 100px;
 }
 
 /* Navigation Bar */
@@ -144,6 +145,7 @@ border-radius: 10px;
     margin: .5rem;
     padding-top: 3rem;
     color: white;
+    text-align: center;
 }
 
 .header-description{
@@ -151,6 +153,7 @@ border-radius: 10px;
     font-size: 2rem;
     margin: .5rem;
     color: white;
+    text-align: center;
 }
 
 @media (max-width: 950px) {
@@ -169,7 +172,43 @@ border-radius: 10px;
 
 @media (max-width: 650px) {
     .header-title{
+        font-size: 2.25rem;
+    }
+    
+    .header-description{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .header-title{
         font-size: 2rem;
+        padding-top: 2.25rem;
+    }
+    
+    .header-description{
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .header-title{
+        font-size: 1.75rem;
+        padding-top: 2.25rem;
+    }
+    
+    .header-description{
+        font-size: 1.15rem;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .header-title{
+        font-size: 1.5rem;
+        padding-top: 2.25rem;
     }
     
     .header-description{
@@ -178,9 +217,23 @@ border-radius: 10px;
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
     .header-title{
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+        padding-top: 1.75rem;
+    }
+    
+    .header-description{
+        font-size: .95rem;
+        margin: .25rem;
+    }
+    
+}
+
+@media (max-width: 330px) {
+    .header-title{
+        font-size: 1.15rem;
+        padding-top: 1.5rem;
     }
     
     .header-description{
@@ -189,25 +242,14 @@ border-radius: 10px;
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 285px) {
     .header-title{
-        font-size: 1.15rem;
+        font-size: 1rem;
+        padding-top: 1.5rem;
     }
     
     .header-description{
         font-size: 0.75rem;
-    }
-    
-}
-
-@media (max-width: 300px) {
-    .header-title{
-        font-size: 0.90rem;
-        padding-top: 2rem;
-    }
-    
-    .header-description{
-        font-size: 0.65rem;
     }
     
 }
@@ -307,6 +349,8 @@ button {
     
 }
 
+/* Wave */
+
 .wave {
     position: absolute;
     bottom: 0;
@@ -335,8 +379,242 @@ button {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 300px){
     .wave svg{
         height: 35px;
+    }
+}
+
+/* Main Images */
+
+.mainImages {
+    height: 25rem;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+.main-flex{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainImage-flex{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 25px;
+    gap: 5rem;
+}
+
+.mainImageReverse-flex{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 25px;
+    gap: 5rem;
+}
+
+.mainText-flex{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.mainTitle{
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #0583D2;
+    text-align: center;
+}
+
+.mainDescription{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.35rem;
+    color: #0583D2;
+    text-align: center;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@media (max-width: 1475px){
+    .mainImages {
+        height: 21.5rem;
+    }
+
+    .mainTitle{
+        font-size: 4rem;
+    }
+
+    .mainDescription{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1250px){
+    .mainImages {
+        height: 17.5rem;
+    }
+
+    .mainTitle{
+        font-size: 3.5rem;
+    }
+
+    .mainDescription{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1025px){
+    .mainImage-flex{
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 3rem;
+    }
+
+    .mainImageReverse-flex{
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 3rem;
+    }
+
+    .mainImages {
+        height: 16.5rem;
+    }
+
+    .mainTitle{
+        font-size: 4rem;
+    }
+
+    .mainDescription{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 775px){
+    .mainImages {
+        height: 15.5rem;
+    }
+
+    .mainTitle{
+        font-size: 3.5rem;
+    }
+
+    .mainDescription{
+        font-size: 1.55rem;
+    }
+}
+
+@media (max-width: 650px){
+    .mainTitle{
+        font-size: 3.25rem;
+    }
+
+    .mainDescription{
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 575px){
+    .mainImages {
+        height: 13.5rem;
+    }
+
+    .mainTitle{
+        font-size: 2.75rem;
+    }
+
+    .mainDescription{
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 500px){
+    .mainImages {
+        height: 11.5rem;
+    }
+
+    .mainTitle{
+        font-size: 2.25rem;
+    }
+
+    .mainDescription{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px){
+    .mainTitle{
+        font-size: 2rem;
+    }
+
+    .mainDescription{
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 365px){
+    .mainImages {
+        height: 10rem;
+    }
+
+    .mainTitle{
+        font-size: 1.85rem;
+    }
+
+    .mainDescription{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px){
+    .mainTitle{
+        font-size: 1.65rem;
+    }
+
+    .mainDescription{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 300px){
+    .mainTitle{
+        font-size: 1.5rem;
+    }
+
+    .mainDescription{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 275px){
+    .mainImages {
+        height: 8.5rem;
+    }
+
+    .mainTitle{
+        font-size: 1.4rem;
+    }
+
+    .mainDescription{
+        font-size: 0.5rem;
     }
 }
