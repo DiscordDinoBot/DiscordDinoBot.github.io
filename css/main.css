@@ -632,6 +632,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .footer-flex{
@@ -645,8 +646,21 @@ footer{
     font-size: 18.5px;
 }
 
-@media (max-width: 300px){
+@media (max-width: 500px){
     .footerText{
         font-size: 13px;
+    }
+}
+
+@media (max-width: 350px){
+    .footerText{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 300px){
+    .footer-flex{
+        flex-direction: column;
+        gap: 3px;
     }
 }
