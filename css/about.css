@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: #16558F;
+    background-color: #0583D2;
+    position: relative;
+    min-height: 100vh;    
 }
 
 .mainSection{
-    background-color: #0583D2;;
-    height: 1120px;
     padding-bottom: 50px;
 }
 
@@ -142,35 +142,101 @@ border-radius: 10px;
     color: white;
 }
 
-.header-description{
+/* Main Section*/
+
+.accordion{
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    margin: .5rem;
-    color: white;
 }
 
+.accordionItem{
+    background-color: #2f2e2e;
+    color: #f6f3ec;
+    font-size: 1.55rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.accordionItemHeader{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordionItemHeader::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordionItemHeader.active::after{
+    content: "\2212"
+}
+
+.accordionItemBody{
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.2s ease-out;
+    position: relative;
+}
+
+.accordionItemBody::after{
+    content: "";
+    position: absolute;
+    width: .4rem;
+    height: 100%;
+    background-color: #6abe30;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 0.4rem;
+}
+
+.accordionItemBodyContent{
+    padding: 1rem;
+    background-color: #3f3d3d;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+
+@media (max-width: 775px){
+    .accordionItem{
+        font-size: 1.25rem;
+    }
+    
+    .accordionItemBody{
+        font-size: 1.15rem;
+    }
+}
 
 /* Footer */
 
-footer{
+.footer-flex{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom:0;
     left: 0;
-    bottom: 0;
-    width: 100%;
+    width:100%;
     height: 56px;
+    gap: 20px;
     background-color: #16558F;
     color: white;
     font-family: 'Lato', sans-serif;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.footer-flex{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .footerText{
