@@ -6,4 +6,12 @@
 Check out our [website](https://www.dinosaurbot.com) for additional information on the bot!
  
 ## Project Description
-This repository stores all of the code for [www.dinosaurbot.com](https://www.dinosaurbot.com). All code and images are available for anyone to use.
+This repository stores all of the code for [www.dinosaurbot.com](https://www.dinosaurbot.com).
+
+## Credits
+ 
+Programming and Design: [Callum Brezden](https://github.com/brezden) \
+Contributor: [Wilson Agyapong](https://github.com/WilsoAgya)
+ 
+## License
+The source code for the site is licensed under the MIT license, which you can find in the LICENSE.txt file.
